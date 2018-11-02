@@ -15,6 +15,6 @@ class UserCountTest extends TestCase
     {
         $users = User::all();
         $users->count();
-        $this->assertEquals(56, count($users));      //current number of users is to be updated everytime//
+        $this->assertEquals(58, count($users));      //current number of users is to be updated everytime//
     }
 }

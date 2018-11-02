@@ -14,6 +14,6 @@ class InsertUserTest extends TestCase
     public function testInsertUser()
     {
         $user = factory(\App\User::class)->make();
-        $this->assertDatabaseHas('users', ["name" => 'vinay karingula']);
+        $this->assertDatabaseHas('users', ["name" => 'Vaughn Little I']);
     }
 }
