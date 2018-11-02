@@ -3,17 +3,17 @@ namespace Tests\Unit;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\User;
-class InsertUserTest extends TestCase
+use App\cars;
+class InsertCarTest extends TestCase
 {
     /**
      * A basic test example.
      *
      * @return void
      */
-    public function testInsertUser()
+    public function testExample()
     {
-        $user = factory(\App\User::class)->make();
-        $this->assertDatabaseHas('users', ["name" => 'vinay karingula']);
+        $cars = factory(\App\cars::class)->make();
+        $this->assertDatabaseHas('cars', ["Make" => 'Honda']);
     }
 }
